@@ -9,10 +9,14 @@
 #   end
 
 puts "Creating restaurants..."
-dishoom = {name: "Dishoom", address: "7 Boundary St, London E2 7JE", rating: 5}
-pizza_east =  {name: "Pizza East", address: "56A Shoreditch High St, London E1 6PQ", rating: 4}
+dishoom = {name: "Dishoom", address: "7 Boundary St, London E2 7JE", phone_number: "060760876987", rating: 5}
+pizza_east =  {name: "Pizza East", address: "56A Shoreditch High St, London E1 6PQ", phone_number: "060760876787", rating: 4}
+tattu = {name: "Tattu", address: "Soho, London E2 7JE", phone_number: "060744476987", rating: 3}
+petersham_nurseries =  {name: "Petersham Nurseries", address: "Petersham, Richmond", phone_number: "099460876787", rating: 4}
+nomad = {name: "NOmad Hotel", address: "Covent Garden, London E2 7JE", phone_number: "060997876987", rating: 5}
 
-[dishoom, pizza_east].each do |attributes|
+
+[dishoom, pizza_east, tattu, petersham_nurseries, nomad].each do |attributes|
   restaurant = Restaurant.create!(attributes)
   puts "Created #{restaurant.name}"
 end
