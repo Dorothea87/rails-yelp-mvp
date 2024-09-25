@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   # root "posts#index"
   get 'restaurants', to: 'restaurants#index'
   get 'restaurants/:id', to: 'restaurants#show'
+
+  get 'restaurants/new', to: 'restaurants#new'
 end
