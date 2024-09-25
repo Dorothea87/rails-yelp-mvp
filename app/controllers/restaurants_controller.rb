@@ -1,4 +1,5 @@
 class RestaurantsController < ApplicationController
+
   def index
     @restaurants = Restaurant.all
   end
@@ -8,6 +9,6 @@ class RestaurantsController < ApplicationController
   end
 
   def new
-    @restaurants = Restaurant.new
+    @restaurant = Restaurant.new
   end
 end
